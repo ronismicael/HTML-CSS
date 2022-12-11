@@ -1,0 +1,40 @@
+body{
+    font: normal 1em arial, helvetica, sans-serif;
+}
+
+
+a{
+    font-weight: bold;
+    text-decoration: none;
+    color: red;
+}
+
+a:visited {
+    color: darkred;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+a:active{
+    color: chartreuse;
+}
+
+.especial:hover{
+    color: white;
+    background-color: black;
+    text-decoration: none;
+}
+
+
+.especial::before{
+    color: darkred;
+    content:'[LINK]';
+    font-weight: lighter;
+}
+
+.especial::after{
+    content: '[LINK]';
+    font-weight: lighter;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens adaptativas</title>
+</head>
+<body>
+    <h1>As imagens tem que se adaptar para diversos tamanhos de dispositivos diferentes</h1>
+
+    <picture>
+        <source media="(max-width:650px )" srcset="./imagens/img-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="./imagens/img-m.png" type="image/png">
+        <img src="imagens/img-g.png" alt="Imagem grande">
+    </picture>
+
+
+    <h1>Reproduzindo audios</h1>
+
+    <p>Vamos aprender a reporduzir audio em HTML5</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav">
+
+        <p>Não consegue reproduzir o áudio ? <a href="midia/guanacast-33.mp3" download="guanacast-33.mp3" type="audio/mpeg"></a></p>
+    </audio>
+</body>
+</html>

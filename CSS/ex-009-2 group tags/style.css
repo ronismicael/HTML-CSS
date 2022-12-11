@@ -1,0 +1,61 @@
+body{
+    font-family: sans-serif;
+    margin: 10px;
+}
+
+header{
+    padding-bottom: 10px;
+    background-color: aqua;
+    margin-top: 5;
+    text-align: center;
+}
+
+nav{
+    box-shadow: 4px 3px 1px rgba(0, 0, 0, 0.342);
+    background-color: gray;
+    text-align: left;
+    padding: 3px;
+}
+
+nav > a{
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+nav>a:hover{
+    text-decoration: underline;
+}
+
+main{
+    border-radius: 10px 40px;
+    box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.548);
+    margin-top: 5px;
+    padding: 10px;
+    padding-bottom: 30px;
+    background-color: rgb(1, 105, 105);
+}
+
+article{
+    padding: 5px;
+    background-color: aqua;
+}
+
+article> aside{
+    background-color: rgb(2, 121, 121);
+}
+
+footer{
+    margin-top: 5px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+div#bola{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    margin: 10px;
+    border-radius: 50px;
+}
