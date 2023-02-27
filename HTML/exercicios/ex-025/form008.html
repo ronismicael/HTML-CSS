@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outup em Formulários</title>
+</head>
+<body>
+<form action="cadastro.php" autocomplete="on">
+        
+        <div>
+            <label for="in1"> Número1 </label>
+            <input type="number" name="n1" id="in1" min="0" max="10" required
+            oninput="iresult.innerHTML= Number(in1.value) + Number(in2.value)">
+        </div>
+
+        <div>
+            <label for="in2"> Número1 </label>
+            <input type="number" name="n2" id="in2" min="0" max="10" required  oninput="iresult.innerHTML= Number(in1.value) + Number(in2.value)">
+        </div>
+
+        <div>
+            <label for="iresult">Resultado da soma </label>
+            <output name="result" id="iresult">0</output>
+        </div>
+
+        <div>
+            <input type="submit" value="enviar">
+            <input type="reset" value="Limpar" list="lstprof">
+        </div>
+</form>
+</body>
+</html>
