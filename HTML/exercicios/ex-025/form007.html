@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form: select, detalist e textarea</title>
+</head>
+
+<body>
+    <form action="cadastro.php" autocomplete="on">
+
+        <div>
+            <label for="iest">Estados</label>
+            <select name="estados" id="iest">
+
+                <option value="">--- Escolha ---</option>
+                <optgroup label="Região sudeste">
+                    <option value="SP">São paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="CE">Ceará</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN">Rio grande do norte</option>
+                </optgroup>
+
+            </select>
+
+        </div>
+
+        <div>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="ADM"> Administrador</option>
+                <option value="PROF"> Professor</option>
+                <option value="DEV"> Desenvolvedor</option>
+            </datalist>
+        </div>
+
+        <div>
+            <label for="imsg">Mensagem</label><br>
+            <textarea name="mgs" id="imgs" cols="30" rows="10"></textarea>
+        </div>
+
+        <div>
+            <input type="submit" value="enviar">
+            <input type="reset" value="Limpar" list="lstprof">
+        </div>
+
+    </form>
+</body>
+
+</html>
