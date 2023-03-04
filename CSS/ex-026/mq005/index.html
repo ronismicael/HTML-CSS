@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilo/style.css">
+    <title>Menu responsivo</title>
+</head>
+<body>
+    <header>
+        <h1>Responsividade</h1>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">links</a></li>
+                <li><a href="#">Contatos</a></li>
+                <li><a href="#">Links</a></li>
+            </ul>
+        </menu>
+    </header>
+
+    <main>
+        <article>
+            <h2>Media query e responsividade</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae veritatis atque rerum animi fuga. Asperiores quo officia ipsa natus minima maiores laudantium culpa eius hic officiis, reprehenderit, adipisci quia ullam?Lorem ipsum dolor sit amet consectetur adipisicing elit. In ea maiores, ex quasi libero sit quo cupiditate deleniti repellendus. Illo laboriosam consequuntur harum neque quae consequatur iste vero deserunt nobis.</p>
+
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam ut fuga aspernatur officia enim animi. Itaque quam odio nulla consectetur alias sed consequuntur, adipisci ex rem optio, neque ut beatae!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, tempora illum odio aut molestiae id laborum earum corrupti error quibusdam? Dolorem voluptates incidunt molestiae dolor nulla debitis laudantium quod deserunt.</p>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis architecto exercitationem maiores temporibus totam commodi, id molestiae voluptatibus corporis error quos sunt rerum libero, ex debitis quibusdam doloribus accusantium. Aperiam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga commodi natus illo aliquid, dignissimos magni consequatur ex voluptatibus similique molestias cum ea, distinctio ab explicabo officia vitae eum, deserunt exercitationem.</p>
+        </article>
+
+
+    </main>
+
+    <script>
+        function clickMenu(){
+            if (itens.style.display == 'block'){
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
